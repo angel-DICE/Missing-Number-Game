@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧮 Fill the Missing Number</title>
+  <link rel="stylesheet" href="missingNumberGame.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧮 Fill in the Missing Number</h1>
+      <p>Type the number to complete the equation!</p>
+    </header>
+
+    <div id="game-box">
+      <p id="question">Press START GAME to begin the game!</p>
+      <input type="number" id="answer" placeholder="Enter missing number" />
+      <button id="submit" onclick="checkAnswer()">Submit</button>
+      <p id="feedback"></p>
+    </div>
+
+    <div id="score-container">
+      <p>Score: <span id="score">0</span></p>
+      <p>Time Left: <span id="time">30</span>s</p>
+    </div>
+
+    <button id="start" onclick="startGame()">Start Game</button>
+  </div>
+
+  <script src="missingNumberGame.js"></script>
+</body>
+</html>
